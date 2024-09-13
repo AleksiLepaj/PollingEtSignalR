@@ -58,11 +58,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 // TODO: SignalR: Ajouter la route vers le Hub
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
-
-app.MapHub<MatchHub>("/matchHub");
+app.MapHub<TaskHub>("/tasks");
 
 
 app.Run();
