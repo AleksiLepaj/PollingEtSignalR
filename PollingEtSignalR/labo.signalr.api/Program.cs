@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using labo.signalr.api.Data;
-using labo.signalr.api.Hub;
+using labo.signalr.api.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
